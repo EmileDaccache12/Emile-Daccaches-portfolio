@@ -1,0 +1,127 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Emile Daccache's Portfolio</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+
+        <style>
+            body {
+                background-color: rgb(27, 27, 27);
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            #home {
+                display: block;
+            }
+
+            #title {
+                text-align: center;
+                color: white;
+                font-size: 350%;
+                 font-size: clamp(2rem, 8vw, 3.5rem);
+                font-family: Coiny;
+                font-weight: bold;
+            }
+
+            #cards {
+                display: flex;
+                padding: 6px;
+                justify-content: center;
+                overflow-x: auto;
+                gap: 8px;
+            }
+
+            .sections {
+                transition: transform 0.8s;
+                margin: 30px;
+                vertical-align: top;
+                border-radius: 4px;
+            }
+
+            .sections:hover {
+                transform: scale(1.1);
+                cursor: pointer;
+                border: 1.6px solid rgba(255, 255, 255, 0.499);
+            }
+
+            .content {
+                width: 245px;
+                height: 365px;
+                padding: 15px;
+            }
+
+            .content h1 {
+                color: white;
+                text-shadow: 3px 3px 6px black;
+            }
+
+            .content h3 {
+                color: rgb(235, 235, 235);
+                text-shadow: 0.2px 0.2px 0.8px black;
+            }
+
+            #section1 {
+                background-color: red;
+            }
+
+            #section2 {
+                background-color: rgb(0, 174, 0);
+            }
+
+            #section3 {
+                background-color: blue;
+            }
+
+            @media (max-width: 600px) {
+                .content {
+                    width: 225px;
+                    height: 345px;
+                    padding: 8px;
+                }
+
+                .sections {
+                    border-radius: 5px;
+                    margin: 18px;
+                }
+
+                .sections:hover {
+                    transform: scale(1.08);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="home">
+            <h1 id="title">Emile Daccache's Portfolio</h1>
+
+            <div id="cards">
+                <button id="section1" class="sections">
+                    <div class="content">
+                        <h1>Template/Example Websites</h1>
+                        <br>
+                        <h3>This section shows the websites that ive made as templates or for sowcase</h3>
+                    </div>
+                </button>
+
+                <button id="section2" class="sections">
+                    <div class="content">
+                        <h1>Experience/Skills</h1>
+                        <br>
+                        <h3>This section shows my experience and skills that i have for programming, web development, etc...</h3>
+                    </div>
+                </button>
+
+                <button id="section3" class="sections">
+                    <div class="content">
+                        <h1>Services/About Me</h1>
+                        <br>
+                        <h3>This section shows the services I offer and things about myself for freelancing</h3>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </body>
+    </html>
