@@ -98,6 +98,24 @@
                 }
             }
         </style>
+
+        <script>
+            document.addEventListener("DOMContentLoaded" , function() {
+
+                const home = document.getElementById("home");
+                document.getElementById("section1").addEventListener("click" , function() {
+                    home.style.display = "none";
+                });
+
+                document.getElementById("section2").addEventListener("click" , function() {
+                    home.style.display = "none";
+                });
+
+                document.getElementById("section3").addEventListener("click" , function() {
+                    home.style.display = "none";
+                });
+            });
+        </script>
     </head>
     <body>
         <div id="home">
