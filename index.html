@@ -142,6 +142,20 @@
                 text-shadow: 1.5px 1.5px 3px white;
             }
 
+            .skill-cards {
+                background-color: rgb(40, 40, 40);
+                padding: 10px;
+                width: fit-content;
+                height: fit-content;
+                border-radius: 15px;
+                margin: 10px;
+            }
+
+            #skills > .containers {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
             @media (max-width: 910px) {
                 .containers {
                     padding: 0%;
@@ -309,36 +323,43 @@
             <h1 class="title" style="color: rgb(60, 180, 75);">Experience/Skills</h1>
 
             <div class="containers">
-                <h1 class="sub-titles">Programming languages:</h1>
-                <ul>
-                    <li>Python</li>
-                    <li>C# (C sharp)</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                    <li>JSON</li>
-                </ul>
+                <div class="skill-cards">
+                    <h1 class="sub-titles">Programming languages:</h1>
+                    <ul>
+                        <li>Python</li>
+                        <li>C# (C sharp)</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>JSON</li>
+                    </ul>
+                </div>
 
-                <h1 class="sub-titles">Skills:</h1>
-                <ul>
-                    <li>Programming</li>
-                    <li>Git</li>
-                    <li>Photoshop</li>
-                    <li>Video Editing</li>
-                    <li>Browser Developer Tools</li>
-                    <li>Terminal Commands</li>
-                </ul>
+                <div class="skill-cards">
+                    <h1 class="sub-titles">Skills:</h1>
+                    <ul>
+                        <li>Programming</li>
+                        <li>Git</li>
+                        <li>Photoshop</li>
+                        <li>Video Editing</li>
+                        <li>Browser Developer Tools</li>
+                        <li>Terminal Commands</li>
+                    </ul>
+                </div>
 
-                <h1 class="sub-titles">Tools:</h1>
-                <ol>
-                    <li>VS Code , Visual Studio</li>
-                    <li>GIthub</li>
-                    <li>Cap Cut (Desktop)</li>
-                    <li>Various Photoshop Tools</li>
-                    <li>Chrome DevTools</li>
-                </ol>
+                <div class="skill-cards">
+                    <h1 class="sub-titles">Tools:</h1>
+                    <ol>
+                        <li>VS Code , Visual Studio</li>
+                        <li>GIthub</li>
+                        <li>Cap Cut (Desktop)</li>
+                        <li>Various Photoshop Tools</li>
+                        <li>Chrome DevTools</li>
+                    </ol>
+                </div>
 
-                <h1 class="sub-titles">Web Development Skills:</h1>
+                <div class="skill-cards">
+                    <h1 class="sub-titles">Web Development Skills:</h1>
                     <ul>
                         <li>Responsive Web Design (Mobile/Desktop)</li>
                         <li>Frontend Development</li>
@@ -349,6 +370,7 @@
                         <li>API Usage</li>
                         <li>Website Hosting (GitHub Pages)</li>
                     </ul>
+                </div>
             </div>
         </div>
 
