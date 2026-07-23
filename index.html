@@ -164,7 +164,7 @@
                 border-radius: 10px;
             }
 
-            .home-desktop {
+            .home-desktop , .home-mobile {
                 background-color: white;
                 padding: 5px;
                 position: absolute;
@@ -176,15 +176,23 @@
                 box-shadow: 3px 3px 4px rgba(255, 255, 255, 0.967);
             }
 
-            .home-desktop:hover {
+            .home-mobile {
+                display: none;
+            }
+
+            .home-desktop:hover , .home-mobile:hover {
                 transform: scale(1.03);
                 background-color: rgb(250, 250, 250);
                 cursor: pointer;
             }
 
-            @media (max-width: 1140px) {
+            @media (max-width: 1100px) {
                 .home-desktop {
                     display: none;
+                }
+
+                .home-mobile {
+                    display: block;
                 }
             }
 
@@ -285,6 +293,7 @@
         </div>
 
         <div id="websites">
+            <button class="home-mobile"><b>RETURN</b></button>
             <h1 class="title" style="color: rgb(234, 43, 43);">Showcase Websites</h1>
             <button class="home-desktop"><b>RETURN</b></button>
 
@@ -353,6 +362,7 @@
         </div>
 
         <div id="skills">
+            <button class="home-mobile"><b>RETURN</b></button>
             <h1 class="title" style="color: rgb(60, 180, 75);">Experience/Skills</h1>
             <button class="home-desktop"><b>RETURN</b></button>
 
@@ -412,6 +422,7 @@
         </div>
 
         <div id="services">
+            <button class="home-mobile"><b>RETURN</b></button>
             <h1 class="title" style="color: rgb(60, 120, 240);">Services/Information</h1>
             <button class="home-desktop"><b>RETURN</b></button>
 
