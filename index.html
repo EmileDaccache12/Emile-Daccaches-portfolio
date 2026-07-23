@@ -267,12 +267,10 @@
                     document.getElementById("services").style.display = "block";
                 });
 
-                document.querySelectorAll(".home-desktop").addEventListener("click" , function() {
-                    window.location.reload();
-                });
-
-                document.querySelectorAll(".home-mobile").addEventListener("click" , function() {
-                    window.location.reload();
+                document.querySelectorAll(".home-desktop, .home-mobile").forEach(function(button) {
+                    button.addEventListener("click", function() {
+                        window.location.reload();
+                    });
                 });
             });
         </script>
